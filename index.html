@@ -130,29 +130,33 @@
             <hr>
                 <!-- FORMULARIO -->
                 <div class="newsletter">
-                    <form>
+                    <form
+                    action="https://formspree.io/f/xovqapvd"
+                    method="POST"
+                    >
                         <h4>¡Suscribite a nuestro Newsletter!</h4>
                         <div class="etiquetas">
-                            <label for="Fecha" class="form-label">Fecha:</label>
+                            <label for="date" class="form-label">Fecha:</label>
                             <input type="date">
                         </div>
                         <div class="etiquetas">
-                            <label for="Nombre" class="form-label">Nombre:</label>
-                            <input type="name">
+                            <label for="name" class="form-label" required>Nombre:</label>
+                            <input type="text">
                         </div>
                         <div class="etiquetas">
-                            <label for="Email" class="form-label">Email:</label>
-                            <input type="email">
+                            <label for="email" class="form-label" required>Email:</label>
+                            <input type="text">
                         </div>
                         <div class="etiquetas">
-                            <label for="Teléfono" class="form-label">Teléfono:</label>
-                            <input type="phone">
+                            <label for="phone" class="form-label">Teléfono:</label>
+                            <input type="number">
                         </div>
                         <div>
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label for="exampleCheck">Suscribirse</label>
                         </div>
                         <button type="submit">Enviar</button>
+                        <button type="reset">Borrar</button>
                     </form>
                 </div>
                 <!-- FIN FORMULARIO -->
