@@ -71,6 +71,7 @@ body {
     width: 300px;
     font-size: 13px;
     padding: 15px;
+    margin-right: 20px;
     border: none;
     border-radius: 20px;
     background-color: rgb(255, 165, 165);
@@ -114,54 +115,53 @@ body {
 .contenedor-body {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
     font-size: 13px;
-    margin-top: 15px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .table {
-    width: 600px;
-    height: 250px;
+    width: 500px;
+    height: 200px;
     background-color: white;
+    border: 2px solid rgb(255, 200, 200);
+    border-spacing: 0px;
+    text-align: center;
+}
+
+.table th {
+    width: 100px;
+    height: 10px;
+    border: 2px solid rgb(255, 200, 200);
+    padding: 10px;
+}
+
+.table td {
+    border: 2px solid rgb(255, 200, 200);
+    padding: 10px;
 }
 
 .novedades {
-    width: 500px;
-    height: 250px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.card-novedad {
+    width: 200px;
     background-color: rgb(255, 205, 205);
     border-radius: 20px;
-    padding: 20px;
-    overflow: scroll;
+    padding: 15px;
+    margin: 10px;
+}
+
+.card-novedad button {
+    background-color: rgb(255, 97, 97);
+    border-radius: 5px;
 }
 
 .novedades h4 {
     margin-top: 0px;
-    color: rgb(163, 0, 0);
-}
-
-.opiniones {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 300px;
-    height: 250px;
-    border-style: solid;
-    border-color: rgb(227, 227, 227);
-    background-color: rgb(232, 232, 232);
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.caption {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.caption h5 {
     color: rgb(163, 0, 0);
 }
 
@@ -179,7 +179,6 @@ body {
     padding: 20px;
     background-color: rgb(255, 205, 205);
     border-radius: 20px;
-    margin: 20px;
     font-size: 13px;
 }
 
@@ -203,4 +202,10 @@ body {
     flex-grow: 1;
     width: 100%;
     box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
