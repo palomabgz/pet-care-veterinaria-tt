@@ -1,6 +1,12 @@
 body {
-    background-color: #f6feff;
+    background-color: rgb(246, 254, 255);
     font-family: "Noto Sans TC", sans-serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgb(246, 254, 255)
 }
 
 .navegador {
@@ -8,10 +14,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: sticky;
-    top: 0;
     color: black;
-    background-color: #f6feff;
 }
 
 .secciones {
@@ -46,7 +49,7 @@ body {
 }
 
 .titulo h1 {
-    font-family: "Quicksand", sans-serif;
+    font-family: Quicksand, sans-serif;
     font-weight: bolder;
 }
 
@@ -56,7 +59,7 @@ body {
 }
 
 .fondo-foto {
-    background: url(/img/FONDO.jpg) no-repeat;
+    background: url("/img/FONDO.jpg") no-repeat;
     background-size: cover;
     height: 250px;
 }
@@ -73,7 +76,7 @@ body {
 }
 
 .card h4 {
-    margin-top: 0px;
+    margin-top: 0;
     color: rgb(163, 0, 0);
 }
 
@@ -97,7 +100,7 @@ body {
     text-align: center;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 5px 2px 2px gray;
+    box-shadow: 5px 2px 2px rgb(224, 224, 224);
 }
 
 .sizecard img {
@@ -120,7 +123,7 @@ body {
     height: 200px;
     background-color: white;
     border: 2px solid rgb(255, 200, 200);
-    border-spacing: 0px;
+    border-spacing: 0;
     text-align: center;
 }
 
@@ -155,21 +158,20 @@ body {
 }
 
 .novedades h4 {
-    margin-top: 0px;
+    margin-top: 0;
     color: rgb(163, 0, 0);
 }
 
-.productos {
-    h5 {
-        margin-left: 30px;
-        margin-bottom: 0px;
-    }
-    p {
+.productos p {
         font-size: 13px;
         margin-left: 30px;
         margin-top: 0px;
         margin-bottom: 0px;
-    }
+}
+
+.productos h5 {
+    margin-left: 30px;
+    margin-bottom: 0px;
 }
 
 .grilla {
@@ -187,12 +189,12 @@ body {
     margin-right: 20px;
     border: rgb(255, 165, 165) 2px solid;
     border-radius: 12px;
-    box-shadow: 5px 2px 2px gray;
+    box-shadow: 5px 2px 2px rgb(210, 210, 210);
     background-color: rgb(255, 255, 255);
 }
 
 .newsletter h4 {
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 10px;
     color: rgb(163, 0, 0);
 }
@@ -233,10 +235,9 @@ body {
 .contenedor-footer {
     margin: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
     align-content: space-around;
-    flex-wrap: nowrap;
+    place-content: center stretch;
     align-items: center;
 }
 
@@ -254,5 +255,5 @@ body {
     height: 30px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
