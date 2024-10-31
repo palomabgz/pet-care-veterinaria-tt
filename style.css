@@ -193,6 +193,11 @@ nav {
     background-color: rgb(255, 255, 255);
 }
 
+.grilla-item img {
+    width: 95px;
+    height: 95px;
+}
+
 .newsletter h4 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -236,7 +241,7 @@ nav {
     margin: 30px;
     display: flex;
     flex-flow: row wrap;
-    place-content: center stretch;
+    place-content: space-around;
     align-items: center;
 }
 
