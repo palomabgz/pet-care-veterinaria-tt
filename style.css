@@ -56,7 +56,7 @@ body {
 }
 
 .fondo-foto {
-    background: url(./img/FONDO.jpg) no-repeat;
+    background: url(/img/FONDO.jpg) no-repeat;
     background-size: cover;
     height: 250px;
 }
