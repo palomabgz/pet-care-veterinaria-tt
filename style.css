@@ -165,20 +165,20 @@ nav {
 .productos p {
         font-size: 13px;
         margin-left: 30px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
 }
 
 .productos h5 {
     margin-left: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .grilla {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -236,7 +236,6 @@ nav {
     margin: 30px;
     display: flex;
     flex-flow: row wrap;
-    align-content: space-around;
     place-content: center stretch;
     align-items: center;
 }
@@ -245,9 +244,10 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    h6 {
-        margin-top: 5px;
-    }
+}
+
+.creador h6 {
+    margin-top: 5px;
 }
 
 .redes img {
