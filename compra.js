@@ -2,7 +2,7 @@
 const productos = JSON.parse(localStorage.getItem('productos')) || [];
 const total = localStorage.getItem('total') || 0;
 
-const resumen = document.getElementById("detalle");
+const resumen = document.getElementById("carrito");
 let resumenTexto = "Resumen de la compra:<br><br>";
 
 // Usar un bucle for tradicional para los productos
@@ -22,8 +22,8 @@ function enviarFormulario(event) {
     // Obtiene datos de contacto
     const nombre = document.getElementById('nombre').value.trim();
     const apellido = document.getElementById('apellido').value.trim();
-    const email = document.getElementById('contactoEmail').value.trim();
-    const telefono = document.getElementById('telefono').value.trim();
+    const email = document.getElementById('correo').value.trim();
+    const telefono = document.getElementById('numero').value.trim();
 
     if (!nombre || !apellido || !email || !telefono) {
         alert("Por favor, completa todos los campos de contacto.");
