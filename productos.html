@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pet Care Veterinaria</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- NAVEGACIÓN. -->
+        <nav>
+            <div class="navegador">
+                <div class="secciones">
+                    <img src="./img/LOGO.png" alt="logo" width="50px" height="50px">
+                    <p>Nosotros</p>
+                    <p>Servicios</p>
+                    <p>Locales</p>
+                </div>
+                <div class="buscador">
+                    <input for="text">
+                    <button>Buscar</button>
+                    <a href="./index.html"><button>Regresar</button></a>
+                    <a href="./cart.html"><img src="./img/CART.png" alt="carrito" width="33px" height="33px"></a> 
+                </div>
+            </div>
+        </nav>
+        <!-- FIN NAVEGACIÓN. -->
+
+        <header>
+            <div class="listado">
+                <h4>Nuestros productos</h4>
+            </div>
+        </header>
+        
+        <main>
+            <div class="grilla-carrito">
+                <div class="grilla-item">
+                    <h5>Cama para perro</h5>
+                    <img src="/img/CAMA PERRO.jpg" alt="cama-perro">
+                    <p>$45.000</p>
+                    <button id="btnComprar" onclick="agregarProducto('Cama para perro', 45000)">Añadir al carrito</button>
+                </div>
+                <div class="grilla-item">
+                    <h5>Collar para gato</h5>
+                    <img src="/img/COLLAR GATO.jpg" alt="collar-gato">
+                    <p>$12.000</p>
+                    <button id="btnComprar" onclick="agregarProducto('Collar para gato', 12000)">Añadir al carrito</button>
+                </div>
+                <div class="grilla-item">
+                    <h5>1KG Atún Gatuno</h5>
+                    <img src="/img/COMIDA GATO.jpg" alt="comida-gato">
+                    <p>$17.000</p>
+                    <button id="btnComprar" onclick="agregarProducto('1KG Atún Gatuno', 17000)">Añadir al carrito</button>
+                </div>
+                <div class="grilla-item">
+                    <h5>500G Sticks Perro</h5>
+                    <img src="/img/COMIDA PERRO.jpg" alt="comida-perro">
+                    <p>$9.000</p>
+                    <button id="btnComprar" onclick="agregarProducto('500G Sticks Perro', 9000)">Añadir al carrito</button>
+                </div>
+                <div class="grilla-item">
+                    <h5>Juguete para perro</h5>
+                    <img src="/img/JUGUETE PERRO.jpg" alt="juguete-perro">
+                    <p>$5.700</p>
+                    <button id="btnComprar" onclick="agregarProducto('Juguete para perro', 5700)">Añadir al carrito</button>
+                </div>
+                <div class="grilla-item">
+                    <h5>Rascador para gato</h5>
+                    <img src="/img/RASCADOR GATO.jpg" alt="rascador-gato">
+                    <p>$10.500</p>
+                    <button id="btnComprar" onclick="agregarProducto('Rascador para gato', 10500)">Añadir al carrito</button>
+                </div>
+                <div class="grilla-item">
+                    <h5>Plato mascota</h5>
+                    <img src="/img/TAZÓN.jpg" alt="plato">
+                    <p>$6.000</p>
+                    <button id="btnComprar" onclick="agregarProducto('Plato mascota', 6000)">Añadir al carrito</button>
+                </div>
+                <div class="grilla-item">
+                    <h5>Bolsa de transporte gatuna</h5>
+                    <img src="/img/BOLSO GATO.jpg" alt="bolsa-gato">
+                    <p>$30.000</p>
+                    <button id="btnComprar" onclick="agregarProducto('Bolsa de transporte gatuna', 30000)">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="listado">
+                <h4>Carrito de compras</h4>
+                <div id="carrito" class="contenido">
+                </div>
+                <div>
+                    <button id="btnPagar" onclick="pagar()">Pagar</button>
+                    <button id="btnLimpiar" onclick="limpiar()">Vaciar Carrito</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <!-- CREADOR -->
+            <div class="creador">
+                <div class="redes">
+                    <img src="img/INSTA.png" alt="instagram">
+                    <img src="img/WPP.png" alt="whatsapp">
+                    <img src="img/TWITTER.png" alt="twitter">
+                </div>
+                <h6>Creado por Paloma Belén González
+                <br>@ Talento Tech, 2024.</h6>
+            </div>
+            <!-- FIN CREADOR -->
+            
+        </footer>
+    <!-- FIN FOOTER -->
+    <script src="tienda.js"></script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pet Care Veterinaria</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- NAVEGACIÓN. -->
+        <nav>
+            <div class="navegador">
+                <div class="secciones">
+                    <img src="./img/LOGO.png" alt="logo" width="50px" height="50px">
+                    <p>Nosotros</p>
+                    <p>Servicios</p>
+                    <p>Locales</p>
+                </div>
+                <div class="buscador">
+                    <input for="text">
+                    <button>Buscar</button>
+                    <a href="./index.html"><button>Regresar</button></a>
+                    <a href="./productos.html"><img src="./img/PRODUCTOS.png" alt="productos" width="45px" height="45px"></a> 
+                </div>
+            </div>
+        </nav>
+        <!-- FIN NAVEGACIÓN. -->
+
+        <header>
+            <div class="cart-titulo">
+                <h4>Confirmación de compra</h4>
+            </div>
+        </header>
+        
+        <main>
+            <div class="listado">
+                <form id="fomulario" action="https://formspree.io/f/xzzbqglr" method="post" class="formulario">
+                    <textarea name="carrito" id="carritoData" style="display: none;"></textarea>
+                    <textarea name="total" id="totalCarrito" style="display: none;"></textarea>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+                    <input type="phone" id="numero" name="phone" placeholder="Ingresa tu teléfono" required>
+                    <input type="email" id="correo" name="email" placeholder="Ingresa tu correo" required>
+                </form>
+                <div>
+                    <button type="submit" id="botonEnviar">Confirmar</button>
+                    <a href="./productos.html"><button>Regresar</button></a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <!-- CREADOR -->
+            <div class="creador">
+                <div class="redes">
+                    <img src="img/INSTA.png" alt="instagram">
+                    <img src="img/WPP.png" alt="whatsapp">
+                    <img src="img/TWITTER.png" alt="twitter">
+                </div>
+                <h6>Creado por Paloma Belén González
+                <br>@ Talento Tech, 2024.</h6>
+            </div>
+            <!-- FIN CREADOR -->
+            
+        </footer>
+    <!-- FIN FOOTER -->
+    <script src="compra.js"></script>
+    </body>
+</html>

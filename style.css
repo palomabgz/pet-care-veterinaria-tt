@@ -9,12 +9,33 @@ nav {
     background-color: rgb(246, 254, 255)
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(255, 97, 97);
+}
+
+button {
+    background-color: rgb(255, 97, 97);
+    border-radius: 8px;
+    border-color: rgb(255, 97, 97);
+    margin: 5px;
+}
+
+
 .navegador {
     height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     color: black;
+}
+
+.navegador p {
+    font-size: 15px;
 }
 
 .secciones {
@@ -34,12 +55,75 @@ nav {
     display: flex;
     justify-content: end;
     margin-right: 10px;
+    align-items: center;
+}
+
+.buscador input {
+    margin-right: 5px;
+    height: 20px;
+    border-radius: 10px;
+    border-color: rgb(255, 165, 165);
 }
 
 .buscador button {
-    margin-left: 5px;
-    border-radius: 5px;
-    background-color: rgb(255, 131, 131);
+    width: 68px;
+    height: 28px;
+    margin: 2px;
+    border-radius: 8px;
+}
+
+.buscador img {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.contenido {
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+.contenido p {
+    margin: 2px;
+}
+
+.cart-titulo {
+    text-align: center;
+}
+
+.listado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.listado button {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.listado h4 {
+    margin-bottom: 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.formulario input {
+    margin: 8px;
+    padding: 5px;
 }
 
 .titulo {
@@ -78,11 +162,6 @@ nav {
 .card h4 {
     margin-top: 0;
     color: rgb(163, 0, 0);
-}
-
-.card button {
-    background-color: rgb(255, 97, 97);
-    border-radius: 5px;
 }
 
 .cards {
@@ -163,23 +242,30 @@ nav {
 }
 
 .productos p {
-        font-size: 13px;
+        font-size: 15px;
         margin-left: 30px;
         margin-top: 0;
         margin-bottom: 0;
 }
 
-.productos h5 {
+.productos h4 {
     margin-left: 30px;
     margin-bottom: 0;
 }
 
-.grilla {
+.grilla-carrito {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-top: 0;
-    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grilla-inicio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 0;
     text-align: center;
 }
 
@@ -187,6 +273,7 @@ nav {
     margin: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 50px;
     border: rgb(255, 165, 165) 2px solid;
     border-radius: 12px;
     box-shadow: 5px 2px 2px rgb(210, 210, 210);
@@ -196,6 +283,13 @@ nav {
 .grilla-item img {
     width: 95px;
     height: 95px;
+}
+
+.grilla-item button {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 15px;
+    color: white;
 }
 
 .newsletter h4 {
