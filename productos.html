@@ -14,15 +14,13 @@
         <nav>
             <div class="navegador">
                 <div class="secciones">
-                    <img src="./img/LOGO.png" alt="logo" width="50px" height="50px">
-                    <p>Nosotros</p>
-                    <p>Servicios</p>
-                    <p>Locales</p>
+                    <a href="./index.html"><img src="./img/LOGO.png" alt="logo" width="50px" height="50px"></a>
                 </div>
                 <div class="buscador">
-                    <input for="text">
-                    <button>Buscar</button>
-                    <a href="./index.html"><button>Regresar</button></a>
+                    <div class="nav-botones">
+                        <button>Citas</button>
+                        <button>Servicios</button>
+                    </div>
                     <a href="./cart.html"><img src="./img/CART.png" alt="carrito" width="33px" height="33px"></a> 
                 </div>
             </div>
@@ -31,11 +29,20 @@
 
         <header>
             <div class="listado">
-                <h4>Nuestros productos</h4>
+                <h4>Carrito de compras</h4>
+                <div id="carritoData" class="contenido">
+                </div>
+                <div>
+                    <button id="btnPagar" onclick="pagar()">Pagar</button>
+                    <button id="btnLimpiar" onclick="limpiar()">Vaciar Carrito</button>
+                </div>
             </div>
         </header>
         
         <main>
+            <div class="listado">
+                <h4>Nuestros productos</h4>
+            </div>
             <div class="grilla-carrito">
                 <div class="grilla-item">
                     <h5>Cama para perro</h5>
@@ -84,15 +91,6 @@
                     <img src="/img/BOLSO GATO.jpg" alt="bolsa-gato">
                     <p>$30.000</p>
                     <button id="btnComprar" onclick="agregarProducto('Bolsa de transporte gatuna', 30000)">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="listado">
-                <h4>Carrito de compras</h4>
-                <div id="carrito" class="contenido">
-                </div>
-                <div>
-                    <button id="btnPagar" onclick="pagar()">Pagar</button>
-                    <button id="btnLimpiar" onclick="limpiar()">Vaciar Carrito</button>
                 </div>
             </div>
         </main>

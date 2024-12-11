@@ -22,9 +22,7 @@ button {
     background-color: rgb(255, 97, 97);
     border-radius: 8px;
     border-color: rgb(255, 97, 97);
-    margin: 5px;
 }
-
 
 .navegador {
     height: 70px;
@@ -66,7 +64,7 @@ button {
 }
 
 .buscador button {
-    width: 68px;
+    width: 75px;
     height: 28px;
     margin: 2px;
     border-radius: 8px;
@@ -75,6 +73,14 @@ button {
 .buscador img {
     margin-right: 20px;
     margin-left: 15px;
+}
+
+.nav-botones button {
+    background-color: rgb(255, 165, 165);
+    border-color: rgb(255, 165, 165);
+    margin: 5px;
+    height: 30px;
+    margin-left: 0;
 }
 
 .contenido {
@@ -90,10 +96,6 @@ button {
 
 .contenido p {
     margin: 2px;
-}
-
-.cart-titulo {
-    text-align: center;
 }
 
 .listado {
@@ -127,19 +129,28 @@ button {
 }
 
 .titulo {
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     color: white;
     padding: 10px;
+    margin-left: 20px;
 }
 
 .titulo h1 {
     font-family: Quicksand, sans-serif;
     font-weight: bolder;
+    margin-bottom: 0;
+    margin-top: 35px;
 }
 
 .titulo p {
     font-size: 14px;
-    width: 500px;
+    width: 800px;
+}
+
+.cart-titulo {
+    text-align: center;
 }
 
 .fondo-foto {
@@ -150,17 +161,18 @@ button {
 
 .card {
     width: 300px;
+    margin-left: 20px;
     font-size: 13px;
-    padding: 15px;
-    margin-right: 20px;
+    padding: 20px;
     border: none;
     border-radius: 20px;
     background-color: rgb(255, 165, 165);
-    box-shadow: 5px 2px 2px gray;
+    color: rgb(59, 59, 59);
 }
 
 .card h4 {
     margin-top: 0;
+    margin-bottom: 0;
     color: rgb(163, 0, 0);
 }
 
@@ -168,13 +180,14 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .sizecard {
     width: 300px;
+    height: 260px;
     font-size: 13px;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     text-align: center;
     border-radius: 20px;
@@ -185,7 +198,7 @@ button {
 .sizecard img {
     width: 40px;
     height: 40px;
-    margin: 20px;
+    margin-top: 10px;
 }
 
 .contenedor-body {
@@ -218,6 +231,10 @@ button {
     padding: 10px;
 }
 
+.horarios {
+    margin-top: 30px;
+}
+
 .novedades {
     display: flex;
     flex-direction: row;
@@ -238,6 +255,7 @@ button {
 
 .novedades h4 {
     margin-top: 0;
+    margin-bottom: 0;
     color: rgb(163, 0, 0);
 }
 

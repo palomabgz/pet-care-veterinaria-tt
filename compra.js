@@ -2,7 +2,7 @@
 const productos = JSON.parse(localStorage.getItem('productos')) || [];
 const total = localStorage.getItem('total') || 0;
 
-const resumen = document.getElementById("carrito");
+const resumen = document.getElementById("carritoData");
 let resumenTexto = "Resumen de la compra:<br><br>";
 
 // Bucle productos
@@ -17,7 +17,7 @@ resumen.innerHTML = resumenTexto;
 
 // Envío form
 function enviarFormulario(event) {
-    event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
+    event.preventDefault(); 
 
     // Obtiene datos de contacto
     const nombre = document.getElementById('nombre').value.trim();

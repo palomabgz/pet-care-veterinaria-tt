@@ -3,7 +3,7 @@ let productos = [];
 let total = 0;
 
 function agregarProducto(producto, precio) {
-    let carrito = document.getElementById("carrito");
+    let carrito = document.getElementById("carritoData");
     let productoItem = document.createElement("p");
     productoItem.textContent = producto;
     carrito.appendChild(productoItem);
@@ -26,7 +26,7 @@ function limpiar () {
     if (confirm("¿Desea limpiar el carrito?")) {
         productos = [];
         total = 0;
-        document.getElementById("carrito").innerHTML = "";
+        document.getElementById("carritoData").innerHTML = "";
         document.getElementById("btnPagar").textContent = "Comprar";
 
         localStorage.removeItem("productos");
