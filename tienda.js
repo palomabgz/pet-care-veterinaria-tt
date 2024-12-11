@@ -1,4 +1,3 @@
-// CARRITO
 let productos = [];
 let total = 0;
 

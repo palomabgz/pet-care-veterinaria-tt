@@ -13,8 +13,9 @@
         <!-- NAVEGACIÓN. -->
         <nav>
             <div class="navegador">
-                <div class="secciones">
-                    <a href="./index.html"><img src="./img/LOGO.png" alt="logo" width="50px" height="50px"></a>
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/LOGO.png" alt="logo" width="65px" height="65px"></a>
+                    <h4>PetCare Veterinaria</h4>
                 </div>
                 <div class="buscador">
                     <div class="nav-botones">
@@ -29,23 +30,26 @@
 
         <header>
             <div class="cart-titulo">
-                <h4>Confirmación de compra</h4>
+                <h3>Confirmación de la compra</h3>
             </div>
         </header>
         
         <main>
-            <div class="listado">
-                <form id="fomulario" action="https://formspree.io/f/xzzbqglr" method="post" class="formulario">
-                    <textarea name="carrito" id="carritoData" style="display: none;"></textarea>
-                    <textarea name="total" id="totalCarrito" style="display: none;"></textarea>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
-                    <input type="phone" id="numero" name="phone" placeholder="Ingresa tu teléfono" required>
-                    <input type="email" id="correo" name="email" placeholder="Ingresa tu correo" required>
-                </form>
-                <div>
-                    <button type="submit" id="botonEnviar">Confirmar</button>
-                    <a href="./productos.html"><button>Regresar</button></a>
+            <div class="contenedor-compra">
+                <div class="contenido" name="carrito" id="carritoData"></div>
+                <div name="total" id="totalCarrito"></div>
+                <div class="listado">
+                    <h4 style="margin-bottom: 10px;">Ingresa tus datos</h4>
+                    <form id="formulario" action="https://formspree.io/f/xzzbqglr" method="post" class="formulario">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                        <input type="phone" id="numero" name="phone" placeholder="Teléfono" required>
+                        <input type="email" id="correo" name="email" placeholder="E-mail" required>
+                    </form>
+                    <div>
+                        <button type="submit" id="botonEnviar">Confirmar</button>
+                        <a href="./productos.html"><button>Regresar</button></a>
+                    </div>
                 </div>
             </div>
         </main>
