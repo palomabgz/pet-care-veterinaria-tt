@@ -8,12 +8,11 @@ let resumenTexto = "Resumen de la compra:<br><br>";
 // Bucle productos
 for (let i = 0; i < productos.length; i++) {
     const producto = productos[i];
-    resumenTexto += `${producto.nombre}: $${producto.precio}<br>`;
+    resumenTexto += `${producto.nombre}: $${producto.precio} x ${producto.cantidad} = $${producto.precio * producto.cantidad}<br>`;
 }
 
 resumenTexto += `<br>Total a pagar: $${total}`;
 resumen.innerHTML = resumenTexto;
-
 
 // Envío form
 function enviarFormulario(event) {
@@ -34,7 +33,7 @@ function enviarFormulario(event) {
     let carritoContenido = '';
     for (let i = 0; i < productos.length; i++) {
         const producto = productos[i];
-        carritoContenido += `${producto.nombre} - $${producto.precio}\n`;
+        carritoContenido += `${producto.nombre} - $${producto.precio} x ${producto.cantidad} = $${producto.precio * producto.cantidad}\n`;
     }
 
     const totalConPesos = `$${total}`;
@@ -44,4 +43,4 @@ function enviarFormulario(event) {
     document.getElementById('formulario').submit();
 }
 
-    document.getElementById('botonEnviar').addEventListener('click', enviarFormulario);
+document.getElementById('botonEnviar').addEventListener('click', enviarFormulario);

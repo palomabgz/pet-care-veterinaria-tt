@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Pet Care Veterinaria</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     </head>
     
@@ -19,8 +19,8 @@
                 </div>
                 <div class="buscador">
                     <div class="nav-botones">
-                        <button>Citas</button>
-                        <button>Servicios</button>
+                        <a href="./citas.html"><button>Citas</button></a>
+                        <a href="./servicios.html"><button>Servicios</button></a>
                     </div>
                     <a href="./cart.html"><img src="./img/CART.png" alt="carrito" width="33px" height="33px"></a> 
                 </div>
@@ -30,7 +30,7 @@
 
         <header>
             <div class="listado" id="productos">
-                <h4>Carrito de compras</h4>
+                <h3>Carrito de compras</h3>
                 <div id="carritoData" class="contenido"></div>
                 <div>
                     <button id="btnPagar" onclick="pagar()">Pagar</button>
@@ -49,48 +49,56 @@
                     <img src="/img/CAMA PERRO.jpg" alt="cama-perro">
                     <p>$45.000</p>
                     <button id="btnComprar" onclick="agregarProducto('Cama para perro', 45000)">Añadir al carrito</button>
+                    <button onclick="eliminarUnidad('Cama para perro')">Eliminar Unidad</button>
                 </div>
                 <div class="grilla-item">
                     <h5>Collar para gato</h5>
                     <img src="/img/COLLAR GATO.jpg" alt="collar-gato">
                     <p>$12.000</p>
                     <button id="btnComprar" onclick="agregarProducto('Collar para gato', 12000)">Añadir al carrito</button>
+                    <button onclick="eliminarUnidad('Collar para gato')">Eliminar Unidad</button>
                 </div>
                 <div class="grilla-item">
                     <h5>1KG Atún Gatuno</h5>
                     <img src="/img/COMIDA GATO.jpg" alt="comida-gato">
                     <p>$17.000</p>
                     <button id="btnComprar" onclick="agregarProducto('1KG Atún Gatuno', 17000)">Añadir al carrito</button>
+                    <button onclick="eliminarUnidad('1KG Atún Gatuno')">Eliminar Unidad</button>
                 </div>
                 <div class="grilla-item">
                     <h5>500G Sticks Perro</h5>
                     <img src="/img/COMIDA PERRO.jpg" alt="comida-perro">
                     <p>$9.000</p>
                     <button id="btnComprar" onclick="agregarProducto('500G Sticks Perro', 9000)">Añadir al carrito</button>
+                    <button onclick="eliminarUnidad('500G Sticks Perro')">Eliminar Unidad</button>
                 </div>
                 <div class="grilla-item">
                     <h5>Juguete para perro</h5>
                     <img src="/img/JUGUETE PERRO.jpg" alt="juguete-perro">
                     <p>$5.700</p>
                     <button id="btnComprar" onclick="agregarProducto('Juguete para perro', 5700)">Añadir al carrito</button>
+                    <button onclick="eliminarUnidad('Juguete para perro')">Eliminar Unidad</button>
                 </div>
                 <div class="grilla-item">
                     <h5>Rascador para gato</h5>
                     <img src="/img/RASCADOR GATO.jpg" alt="rascador-gato">
                     <p>$10.500</p>
                     <button id="btnComprar" onclick="agregarProducto('Rascador para gato', 10500)">Añadir al carrito</button>
+                    <button onclick="eliminarUnidad('Rascador para gato')">Eliminar Unidad</button>
                 </div>
                 <div class="grilla-item">
                     <h5>Plato mascota</h5>
                     <img src="/img/TAZÓN.jpg" alt="plato">
                     <p>$6.000</p>
                     <button id="btnComprar" onclick="agregarProducto('Plato mascota', 6000)">Añadir al carrito</button>
+                    <button onclick="eliminarUnidad('Plato mascota')">Eliminar Unidad</button>
                 </div>
                 <div class="grilla-item">
                     <h5>Bolsa de transporte gatuna</h5>
                     <img src="/img/BOLSO GATO.jpg" alt="bolsa-gato">
                     <p>$30.000</p>
                     <button id="btnComprar" onclick="agregarProducto('Bolsa de transporte gatuna', 30000)">Añadir al carrito</button>
+                    <button onclick="eliminarUnidad('Bolsa de transporte gatuna')">Eliminar Unidad</button>
                 </div>
             </div>
         </main>
@@ -110,6 +118,6 @@
             
         </footer>
     <!-- FIN FOOTER -->
-    <script src="tienda.js"></script>
+    <script src="./javascript/tienda.js"></script>
     </body>
 </html>

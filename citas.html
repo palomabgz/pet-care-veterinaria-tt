@@ -18,10 +18,7 @@
                     <h4>PetCare Veterinaria</h4>
                 </div>
                 <div class="buscador">
-                    <div class="nav-botones">
-                        <a href="./citas.html"><button>Citas</button></a>
-                        <a href="./servicios.html"><button>Servicios</button></a>
-                    </div>
+                    <a href="./cart.html"><img src="./img/CART.png" alt="carrito" width="33px" height="33px"></a>
                     <a href="./productos.html"><img src="./img/PRODUCTOS.png" alt="productos" width="45px" height="45px"></a> 
                 </div>
             </div>
@@ -30,14 +27,14 @@
 
         <header>
             <div class="listado">
-                <h3>Confirmación de la compra</h3>
+                <h4 id="tituloServicio"></h4>
+                <h3>Solicitá nuestros servicios acá</h3>
+                <p>Nos comunicaremos con vos de inmediato</p>
             </div>
         </header>
         
         <main>
             <div class="contenedor-compra">
-                <div class="contenido" name="carrito" id="carritoData"></div>
-                <div name="total" id="totalCarrito"></div>
                 <div class="listado">
                     <h4 style="margin-bottom: 10px;">Ingresa tus datos</h4>
                     <form id="formulario" action="https://formspree.io/f/xzzbqglr" method="post" class="formulario">
@@ -47,8 +44,8 @@
                         <input type="email" id="correo" name="email" placeholder="E-mail" required>
                     </form>
                     <div>
-                        <button type="submit" id="botonEnviar">Confirmar</button>
-                        <a href="./productos.html"><button>Regresar</button></a>
+                        <button type="submit" id="botonEnviar">Enviar</button>
+                        <a href="./servicios.html"><button>Regresar</button></a>
                     </div>
                 </div>
             </div>
@@ -69,6 +66,6 @@
             
         </footer>
     <!-- FIN FOOTER -->
-    <script src="./javascript/compra.js"></script>
+    <script src="./javascript/citas.js"></script>
     </body>
 </html>

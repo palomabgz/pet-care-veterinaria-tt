@@ -25,6 +25,7 @@ button {
     background-color: rgb(255, 97, 97);
     border-radius: 8px;
     border-color: rgb(255, 97, 97);
+    color: white;
 }
 
 .logo {
@@ -81,6 +82,7 @@ button {
     margin: 5px;
     height: 30px;
     margin-left: 0;
+    color: black;
 }
 
 .contenedor-compra {
@@ -88,7 +90,7 @@ button {
     justify-content: center;
     align-items: center;
     height: 300px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 80px;
 }
 
@@ -121,21 +123,28 @@ button {
     color: white;
 }
 
-.listado h4 {
-    margin-bottom: 0;
+.listado h3 {
+    color: rgb(255, 165, 165);
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.listado p {
+    font-size: 14px;
+    margin: 0;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-top: 0;
 }
 
 .formulario input {
-    margin: 8px;
+    margin: 5px;
     padding: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .titulo {
@@ -157,11 +166,6 @@ button {
 .titulo p {
     font-size: 14px;
     width: 800px;
-}
-
-.cart-titulo {
-    text-align: center;
-    margin-bottom: 0;
 }
 
 .fondo-foto {
@@ -282,6 +286,14 @@ button {
     margin-bottom: 0;
 }
 
+.grilla-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 0;
+    text-align: center;
+}
+
 .grilla-carrito {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -302,7 +314,7 @@ button {
     margin: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border: rgb(255, 165, 165) 2px solid;
     border-radius: 12px;
     box-shadow: 5px 2px 2px rgb(210, 210, 210);
@@ -317,6 +329,39 @@ button {
 .grilla-item button {
     width: 120px;
     height: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.grilla-item-servicios {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    border: rgb(255, 165, 165) 2px solid;
+    border-radius: 12px;
+    box-shadow: 5px 2px 2px rgb(210, 210, 210);
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+.grilla-item-servicios p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.grilla-item-servicios img {
+    width: 70px;
+    height: 70px;
+}
+
+.grilla-item-servicios h5 {
+    font-size: 14px;
+}
+
+.grilla-item-servicios button {
+    width: 120px;
+    height: 30px;
+    margin-top: 15px;
     margin-bottom: 15px;
     color: white;
 }
